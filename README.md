@@ -23,3 +23,12 @@ deployment.apps/spring1   1/1     1            1           3m48s
 
 NAME                                 DESIRED   CURRENT   READY   AGE
 replicaset.apps/spring1-6f7867685c   1         1         1       3m48s
+
+
+Check the application is running on the port 8080
+exec -it spring1-6f7867685c-pmx4p -- curl localhost:8080
+
+Check that application picked the env from the deployment file
+kubectl exec -it spring1-6f7867685c-pmx4p -- curl localhost:8080/env
+Hello env k8scontrolplane
+
