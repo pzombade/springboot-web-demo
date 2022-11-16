@@ -35,7 +35,7 @@ jobs:
        username: ${{ secrets.DOCKER_HUB_USERNAME }} 
        password:  ${{ secrets.DOCKER_HUB_PASSWORD }}
        repository: pzombade/spring-boot-docker       
-       # tags: ${{github.run_number}}
+       tags: ${{github.run_number}}, latest
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
