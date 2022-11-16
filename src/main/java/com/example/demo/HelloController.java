@@ -13,7 +13,7 @@ public class HelloController {
 
     @RequestMapping
     public String helloWorld(){
-        return "Hello World from Spring Boot";
+        return "Hello World from Spring Boot2";
     }
 
     @RequestMapping("/env")
