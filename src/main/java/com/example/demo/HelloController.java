@@ -16,6 +16,11 @@ public class HelloController {
         return "Hello World from Spring Boot";
     }
 
+    @RequestMapping("/docker")
+    public String helloDocker(){
+        return "Hello Docker";
+    }
+
     @RequestMapping("/env")
     public String helloEnv(){
         return "Hello env "+env;
